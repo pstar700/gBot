@@ -1,0 +1,47 @@
+{
+	"geode": "5.7.1",
+	"gd": {
+		"win": "2.2081",
+		"mac": "2.2081",
+		"android": "2.206",
+		"ios": "2.2081"
+	},
+	"version": "v3.0.0-beta.11",
+	"tags": [
+		"utility"
+	],
+	"id": "fig.zbot",
+	"name": "zBot",
+	"developer": "pstar700",
+	"description": "Geometry Dash Replay Bot",
+	"dependencies": [
+		{
+			"id": "geode.custom-keybinds",
+			"version": "v1.10.0",
+			"importance": "required"
+		}
+    ],
+	"resources": {
+		"files": [
+			"resources/*.ttf",
+			"resources/*.zip"
+		]
+	},
+	"settings": {
+		"product_key": {
+			"type": "string",
+			"name": "zBot Product Key",
+			"description": "Your zBot Product Key (see mod description for purchase information)",
+
+			"default": "",
+			"match": "^[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{12}$|^$",
+			"filter": "abcdef0123456789-"
+		}
+	},
+	"early-load": true,
+	"links": {
+        "homepage": "https://zbot.figmentcoding.me/",
+        "source": "https://github.com/FigmentBoy/zBot",
+        "community": "https://discord.gg/pPSAU6Ugka"
+    }
+}
